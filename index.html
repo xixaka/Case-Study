@@ -1,0 +1,223 @@
+
+<html>
+  <head>
+    <title>CASE STUDY</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div>
+      <label id="heading">Case Study</label>
+      <img class="heading_img" src="Waterborne-Automobile-Coatings-Will-Witness-a-Staggering-Growth-During-2020–2028.gif" alt="GIF HAS FAILED TO LOAD. PLEASE TRY AGAIN LATER WITH PROPER INTERNET CONECTION.">
+    </div>
+    <hr>
+    <div class="case">
+
+      <!--1 modal-->
+      <button type="button" class="btn btn-warning btn-lg modal_buttons" data-toggle="modal" data-target="#myModal">Open 1st image</button>
+
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <div class="modal-content">
+            <div class="modal-header modal_header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">1st Image</h4>
+            </div>
+            <div class="modal-body modal_body">
+              <Label>1. Test Image - </Label>
+              <br>
+              <img class="case_img img-responsive" src="Water Bottle.jpg" alt="">
+              <br>
+              <label>Output On Microsoft Azure - <span id="1MA">a close up of a bottle</span></label>
+              <br>
+              <label>Output On Mobilenet Model - <span id="1MN"></span></label>
+              <br>
+              <div class="results">
+                <label>Result - </label>
+                <hr>
+                <span id="1result"></span>
+              </div>
+            </div>
+            <div class="modal-footer modal_footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      <br>
+      <br>
+<!--2 modal-->
+      <button type="button" class="btn btn-warning btn-lg modal_buttons" data-toggle="modal" data-target="#myModal">Open 2nd image</button>
+
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <div class="modal-content">
+            <div class="modal-header modal_header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">2nd Image</h4>
+            </div>
+            <div class="modal-body modal_body">
+              <Label>2. Test Image - </Label>
+              <br>
+              <img class="case_img img-responsive" src="Headsets.jpg" alt="">
+              <br>
+              <label>Output On Microsoft Azure - <span id="2MA">a close up of a device</span></label>
+              <br>
+              <label>Output On Mobilenet Model - <span id="2MN"></span></label>
+              <br>
+              <div class="results">
+                <label>Result - </label>
+                <hr>
+                <span id="1result"></span>
+              </div>
+            </div>
+            <div class="modal-footer modal_footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!--3 modal-->
+<button type="button" class="btn btn-warning btn-lg modal_buttons" data-toggle="modal" data-target="#myModal">Open 3rd image</button>
+
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <div class="modal-content">
+            <div class="modal-header modal_header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">3rd Image</h4>
+            </div>
+            <div class="modal-body modal_body">
+              <Label>3. Test Image - </Label>
+              <br>
+              <img class="case_img img-responsive" src="Stuffed Toy Bird.jpg" alt="">
+              <br>
+              <label>Output On Microsoft Azure - <span id="3MA">a bird sitting on top of each other</span></label>
+              <br>
+              <label>Output On Mobilenet Model - <span id="3MN"></span></label>
+              <br>
+              <div class="results">
+                <label>Result - </label>
+                <hr>
+                <span id="1result"></span>
+              </div>
+            </div>
+            <div class="modal-footer modal_footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!--4 modal-->
+            <button type="button" class="btn btn-warning btn-lg modal_buttons" data-toggle="modal" data-target="#myModal">Open 4th image</button>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header modal_header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">4th Image</h4>
+      </div>
+      <div class="modal-body modal_body">
+        <Label>4. Test Image - </Label>
+        <br>
+        <img class="case_img img-responsive" src="Bed Matress.jpg" alt="">
+        <br>
+        <label>Output On Microsoft Azure - <span id="4MA">a large room</span></label>
+        <br>
+        <label>Output On Mobilenet Model - <span id="4MN"></span></label>
+        <br>
+        <div class="results">
+          <label>Result - </label>
+          <hr>
+          <span id="1result"></span>
+        </div>
+      </div>
+      <div class="modal-footer modal_footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br>
+<br>
+
+<!--5 Modal-->
+      <button type="button" class="btn btn-warning btn-lg modal_buttons" data-toggle="modal" data-target="#myModal">Open 5th image</button>
+
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <div class="modal-content">
+            <div class="modal-header modal_header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">5th Image</h4>
+            </div>
+            <div class="modal-body modal_body">
+              <Label>5. Test Image - </Label>
+              <br>
+              <img class="case_img img-responsive" src="Running Shoes.jpg" alt="">
+              <br>
+              <label>Output On Microsoft Azure - <span id="5MA">a close up of a footwear</span></label>
+              <br>
+              <label>Output On Mobilenet Model - <span id="5MN"></span></label>
+              <br>
+              <div class="results">
+                <label>Result - </label>
+                <hr>
+                <span id="1result"></span>
+              </div>
+            </div>
+            <div class="modal-footer modal_footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+
+    <br>
+    <div class="footer">
+      <label>I have tested 5 images and have seen that <span class="winner"></span> is more accurate than <span class="loser"></span>. <span class="winner"></span> has guessed <span id="winner_number"></span> correctly and <span class="loser"></span> has guessed <span id="loser_number"></span> correctly.</label>
+    </div>
+    <script src="main.js"></script>
+  </body> 
+</html>
+
+
+
+
+
+
+
+
+ 
+
