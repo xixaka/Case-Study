@@ -59,3 +59,8 @@ body{
     width: 500px;
     font-size: 30px;
 }
+.results{
+    padding-left: 50px;
+    font-size: 25px;
+    color: cadetblue;
+}
